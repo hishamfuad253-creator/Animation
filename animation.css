@@ -1,0 +1,25 @@
+body{background-color: rgba(0, 0, 0, 0.921);}
+#animation{width:100px;
+height: 100px;
+background-color:red;
+border-radius: 20px;
+/*animation-name: box;
+animation-duration: 4s;
+animation-delay: .5s;
+animation-iteration-count: 2;
+animation-timing-function:ease;
+animation-fill-mode:both;
+animation-play-state: running;*/
+}
+@keyframes box{
+0%{background-color:yellow ;translate: 0px 0px;}
+25%{background-color: greenyellow;translate: 400px 0px;rotate: 90deg;}
+50%{background-color: green;translate:400px 500px;rotate: 180deg;}
+75%{background-color: blue;translate:0 500px ;rotate: 270deg;}
+100%{background-color: aqua;translate: 0 0;rotate: 360deg;}
+}
+#animation:hover{animation-play-state: paused;
+cursor: pointer;}
+#animation{animation: box 4s ease .5s 2 both running
+;animation-direction: alternate;}
+
